@@ -10,8 +10,8 @@ backend:
 publish_mode: editorial_workflow
 media_folder: assets/img/uploads
 public_folder: assets/img/uploads
-site_url: https://YOUR-SITE-ADDRESS
-display_url: https://YOUR-SITE-ADDRESS
+site_url: https://muhammad-zakria-nawaz-portfolio.netlify.app
+display_url: https://muhammad-zakria-nawaz-portfolio.netlify.app
 locale: en
 collections:
 - label: Website content
