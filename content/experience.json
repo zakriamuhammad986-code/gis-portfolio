@@ -1,0 +1,51 @@
+{
+  "experience": [
+    {
+      "published": false,
+      "type": "Internship",
+      "title": "Internship, MIS Department",
+      "organization": "Fauji Cement",
+      "department": "MIS Department",
+      "location": "",
+      "dates": "27 July 2026 – 06 September 2026",
+      "summary": "",
+      "responsibilities": [],
+      "credentialUrl": "",
+      "note": ""
+    }
+  ],
+  "training": [
+    {
+      "published": false,
+      "type": "Training",
+      "title": "Add verified details",
+      "organization": "",
+      "dates": "",
+      "summary": "",
+      "responsibilities": [],
+      "credentialUrl": ""
+    }
+  ],
+  "certificates": [
+    {
+      "published": false,
+      "type": "Certificate",
+      "title": "Add verified details",
+      "organization": "",
+      "dates": "",
+      "credentialId": "",
+      "credentialUrl": "",
+      "note": ""
+    }
+  ],
+  "achievements": [
+    {
+      "published": false,
+      "type": "Achievement",
+      "title": "Add verified details",
+      "organization": "",
+      "dates": "",
+      "summary": ""
+    }
+  ]
+}

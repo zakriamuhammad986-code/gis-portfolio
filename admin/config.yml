@@ -1,0 +1,462 @@
+# Admin panel configuration (Decap CMS). See ADMIN-SETUP.md before using.
+# Repository is set. Still replace the two YOUR-SITE-ADDRESS lines after Netlify gives you the site address. Do NOT put passwords, tokens or secret keys in this file: it is public.
+# Login is GitHub only; anyone without push access to the repository cannot save anything.
+# editorial_workflow: every change is saved as a draft pull request and goes live only when you press Publish.
+# This file is generated and checked against the content files; edit with care.
+backend:
+  name: github
+  repo: zakriamuhammad986-code/gis-portfolio
+  branch: main
+publish_mode: editorial_workflow
+media_folder: assets/img/uploads
+public_folder: assets/img/uploads
+site_url: https://YOUR-SITE-ADDRESS
+display_url: https://YOUR-SITE-ADDRESS
+locale: en
+collections:
+- label: Website content
+  name: content
+  files:
+  - label: Projects
+    name: projects
+    file: content/projects.json
+    description: Everything saved here becomes PUBLIC on the website. Add only verified information.
+    fields:
+    - label: Category names
+      name: categories
+      widget: object
+      fields:
+      - label: GIS
+        name: gis
+        widget: string
+        required: true
+      - label: Remote Sensing
+        name: rs
+        widget: string
+        required: true
+      - label: WebGIS
+        name: web
+        widget: string
+        required: true
+      - label: Cartography
+        name: carto
+        widget: string
+        required: true
+    - label: Projects
+      name: projects
+      widget: list
+      summary: '{{title}}'
+      fields:
+      - label: Project ID
+        name: id
+        widget: string
+        required: true
+        hint: Used in links (projects.html#id). Do not change for existing projects.
+        pattern:
+        - ^[a-z0-9-]+$
+        - Lowercase letters, numbers and hyphens only
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Dates (as shown)
+        name: dates
+        widget: string
+        required: true
+        hint: Exactly as you want it shown, e.g. Mar 2026 – May 2026
+      - label: Sort start (YYYY-MM)
+        name: sortStart
+        widget: string
+        required: true
+        pattern:
+        - ^\d{4}-\d{2}$
+        - Use YYYY-MM
+      - label: Sort end (YYYY-MM)
+        name: sortEnd
+        widget: string
+        required: true
+        pattern:
+        - ^\d{4}-\d{2}$
+        - Use YYYY-MM
+      - label: Category
+        name: category
+        widget: select
+        options:
+        - label: GIS & Spatial Analysis
+          value: gis
+        - label: Remote Sensing & Image Processing
+          value: rs
+        - label: WebGIS & Programming
+          value: web
+        - label: Cartography & Network Analysis
+          value: carto
+      - label: Tools
+        name: tools
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+        hint: Only tools you actually used in this project.
+      - label: Short summary
+        name: summary
+        widget: text
+        required: true
+        hint: One or two conservative sentences.
+      - label: Overview
+        name: overview
+        widget: text
+        required: false
+      - label: Objective
+        name: objective
+        widget: text
+        required: false
+      - label: Study area
+        name: studyArea
+        widget: string
+        required: false
+        hint: Leave empty to show an 'Add details' prompt.
+      - label: Data sources and dates
+        name: data
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+        hint: Leave empty to show an 'Add details' prompt. Add only verified sources.
+      - label: Prompt shown while data is empty
+        name: dataHint
+        widget: string
+        required: false
+      - label: Methods / workflow
+        name: methods
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Prompt shown while methods are incomplete
+        name: methodsHint
+        widget: string
+        required: false
+      - label: Outputs and findings
+        name: outputs
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+        hint: Add only outputs that exist. Do not state accuracy or validation unless documented.
+      - label: Prompt shown while outputs are empty
+        name: outputsHint
+        widget: string
+        required: false
+      - label: Your role
+        name: role
+        widget: text
+        required: false
+        hint: One sentence on what you personally did. Leave empty if not confirmed.
+      - label: Project type
+        name: projectType
+        widget: string
+        required: true
+        hint: e.g. Academic / course project. Change once confirmed.
+      - label: Caution note
+        name: caution
+        widget: text
+        required: false
+        hint: Shown as a notice on the project. Leave empty for none.
+      - label: Status label
+        name: status
+        widget: string
+        required: false
+        hint: e.g. Concept. Leave empty for none.
+      - label: Links
+        name: links
+        widget: object
+        fields:
+        - label: GitHub link
+          name: github
+          widget: string
+          required: false
+          hint: Only after you checked it works
+          pattern: &id001
+          - ^https://[^\s]+$
+          - Must be a full link starting with https://
+        - label: Live demo link
+          name: demo
+          widget: string
+          required: false
+          pattern: *id001
+        - label: Report link
+          name: report
+          widget: string
+          required: false
+          pattern: *id001
+      - label: Screenshot
+        name: screenshot
+        widget: image
+        required: false
+        hint: A real screenshot of your work. Leave empty if none.
+        media_library:
+          config:
+            multiple: false
+      - label: Screenshot description (alt text)
+        name: screenshotAlt
+        widget: string
+        required: false
+        hint: Describe what the screenshot shows, for screen-reader users.
+      - label: Card image
+        name: image
+        widget: image
+        required: false
+        hint: Preview image shown on the card.
+      - label: Card image is a placeholder
+        name: imageIsPlaceholder
+        widget: boolean
+        default: true
+        hint: Turn off only when the image is your real work.
+      - label: Card image description (alt text)
+        name: imageAlt
+        widget: string
+        required: false
+      - label: Links hint
+        name: linksHint
+        widget: string
+        required: false
+        hint: Leave empty (internal prompt).
+  - label: Experience & Learning
+    name: experience
+    file: content/experience.json
+    description: Everything saved here becomes PUBLIC on the website. Add only verified information. Items stay
+      hidden until Published is on.
+    fields:
+    - label: Experience
+      name: experience
+      widget: list
+      required: false
+      summary: '{{title}}'
+      fields: &id002
+      - label: Published
+        name: published
+        widget: boolean
+        default: false
+        hint: Keep OFF until every detail and the exact wording are confirmed. Unpublished items are hidden from
+          visitors.
+      - label: Type tag
+        name: type
+        widget: string
+        required: false
+        hint: e.g. Internship, Course, Certificate
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Organization
+        name: organization
+        widget: string
+        required: false
+      - label: Department
+        name: department
+        widget: string
+        required: false
+      - label: Location
+        name: location
+        widget: string
+        required: false
+      - label: Dates (as shown)
+        name: dates
+        widget: string
+        required: false
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+        hint: Verified facts only.
+      - label: Responsibilities
+        name: responsibilities
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+        hint: Only verified statements.
+      - label: Credential ID
+        name: credentialId
+        widget: string
+        required: false
+      - label: Credential link
+        name: credentialUrl
+        widget: string
+        required: false
+        pattern: *id001
+      - label: Small print
+        name: note
+        widget: string
+        required: false
+    - label: Training
+      name: training
+      widget: list
+      required: false
+      summary: '{{title}}'
+      fields: *id002
+    - label: Certificates & Learning
+      name: certificates
+      widget: list
+      required: false
+      summary: '{{title}}'
+      fields: *id002
+    - label: Achievements
+      name: achievements
+      widget: list
+      required: false
+      summary: '{{title}}'
+      fields: *id002
+  - label: Services (optional page)
+    name: services
+    file: content/services.json
+    description: Everything saved here becomes PUBLIC on the website. Add only verified information. No prices.
+    fields:
+    - label: Intro line
+      name: lead
+      widget: text
+      required: false
+    - label: Scope note
+      name: scopeNote
+      widget: text
+      required: false
+    - label: Button text
+      name: cta
+      widget: string
+      required: false
+      hint: 'Default: Contact for scope and quote'
+    - label: Services
+      name: services
+      widget: list
+      required: false
+      summary: '{{title}}'
+      fields:
+      - label: Published
+        name: published
+        widget: boolean
+        default: false
+        hint: Turn ON only for services you are ready to offer.
+      - label: Service ID
+        name: id
+        widget: string
+        required: true
+        pattern:
+        - ^[a-z0-9-]+$
+        - Lowercase letters, numbers and hyphens only
+      - label: Title
+        name: title
+        widget: string
+        required: true
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+      - label: What it includes
+        name: includes
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+      - label: Condition / limit
+        name: limits
+        widget: string
+        required: false
+      - label: Related project IDs
+        name: relatedProjects
+        widget: list
+        required: false
+        field:
+          label: Item
+          name: item
+          widget: string
+        hint: Use IDs from the Projects list. Only link work that really supports the service.
+  - label: Contact & site settings
+    name: site
+    file: content/site.json
+    description: Everything saved here becomes PUBLIC on the website. Add only verified information. Never enter
+      passwords or secret keys.
+    fields:
+    - label: Public email
+      name: email
+      widget: string
+      required: false
+      hint: Shown on the website. Leave empty if you do not want one shown.
+      pattern:
+      - ^$|^[^\s@]+@[^\s@]+\.[^\s@]+$
+      - Enter a valid email address
+    - label: Public phone
+      name: phone
+      widget: string
+      required: false
+    - label: WhatsApp link
+      name: whatsapp
+      widget: string
+      required: false
+      hint: e.g. https://wa.me/92...
+      pattern: *id001
+    - label: Links
+      name: links
+      widget: list
+      required: false
+      summary: '{{label}}'
+      fields:
+      - label: Label
+        name: label
+        widget: string
+        required: true
+        hint: LinkedIn and GitHub fill their own slots; others (Fiverr, Upwork...) are extra rows.
+      - label: URL
+        name: url
+        widget: string
+        required: true
+        pattern: *id001
+    - label: Contact form
+      name: contactForm
+      widget: object
+      fields:
+      - label: Form service address
+        name: endpoint
+        widget: string
+        required: false
+        pattern: *id001
+        hint: Address your form service gave you. The form stays switched off if empty.
+      - label: Extra form values
+        name: fieldsList
+        widget: list
+        required: false
+        summary: '{{key}}'
+        hint: 'Only PUBLIC values the service asks for. Never enter a secret key or password here: this file is
+          public.'
+        fields:
+        - label: Name
+          name: key
+          widget: string
+          required: true
+        - label: Value
+          name: value
+          widget: string
+          required: true
+      - label: Timeout (ms)
+        name: timeoutMs
+        widget: number
+        value_type: int
+        min: 3000
+        max: 60000
+        default: 15000
+    - label: Show Services page
+      name: showServicesPage
+      widget: boolean
+      default: false
+      hint: Also publish at least one service first.

@@ -1,0 +1,561 @@
+{
+  "categories": {
+    "gis": "GIS & Spatial Analysis",
+    "rs": "Remote Sensing & Image Processing",
+    "web": "WebGIS & Programming",
+    "carto": "Cartography & Network Analysis"
+  },
+  "projects": [
+    {
+      "id": "groundwater-mcda",
+      "title": "Groundwater Potential Zonation via MCDA (Balochistan)",
+      "dates": "Mar 2026 – May 2026",
+      "sortStart": "2026-03",
+      "sortEnd": "2026-05",
+      "category": "gis",
+      "tools": [
+        "Weighted Overlay",
+        "Euclidean Distance",
+        "Slope",
+        "Aspect",
+        "Spatial Buffers",
+        "Reclassify"
+      ],
+      "summary": "A Multi-Criteria Decision Analysis workflow combining terrain and spatial criteria to map groundwater-potential zones for an arid region of Balochistan.",
+      "overview": "This project used a Multi-Criteria Decision Analysis (MCDA) workflow to combine relevant terrain and spatial criteria and map groundwater-potential zones for an arid region.",
+      "objective": "Map groundwater-potential zones in Balochistan using a multi-criteria approach.",
+      "studyArea": "Balochistan",
+      "data": [],
+      "dataHint": "Add the data source, resolution and acquisition date for each criterion layer.",
+      "methods": [
+        "Multi-Criteria Decision Analysis (MCDA) combining terrain and spatial criteria.",
+        "Tools used include weighted overlay, Euclidean distance, slope, aspect, spatial buffers and reclassification."
+      ],
+      "methodsHint": "Add the criteria used, their weights and how each layer was reclassified.",
+      "outputs": [],
+      "outputsHint": "Add the final zonation map. Describe validation only if it is documented in the project.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/groundwater-mcda",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "ai-geoprocessing-tools",
+      "title": "AI-Driven Geoprocessing Tool Generation",
+      "dates": "Apr 2026 – Apr 2026",
+      "sortStart": "2026-04",
+      "sortEnd": "2026-04",
+      "category": "web",
+      "tools": [
+        "Genspark AI",
+        "ArcGIS customization environment"
+      ],
+      "summary": "An exploration of AI-assisted generation of custom geoprocessing tools and workflows for ArcGIS.",
+      "overview": "This project explored AI-assisted generation of custom geoprocessing tools and workflows for ArcGIS, using Genspark AI and an ArcGIS customization environment.",
+      "objective": "Explore how AI-assisted generation can be used to create custom geoprocessing tools or workflows for ArcGIS.",
+      "studyArea": "Not applicable",
+      "data": [],
+      "dataHint": "Add any input data used to test the generated tools.",
+      "methods": [
+        "Used Genspark AI to assist in generating custom geoprocessing tools or workflows.",
+        "Worked within an ArcGIS customization environment."
+      ],
+      "methodsHint": "Add which tools were generated and how each one was tested.",
+      "outputs": [],
+      "outputsHint": "Add the tools produced. No efficiency or time-saving claims are made unless they were measured.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/ai-geoprocessing-tools",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "sdss-potohar-climate",
+      "title": "SDSS: Potohar Plateau Climate Change Analysis",
+      "dates": "Mar 2026 – Apr 2026",
+      "sortStart": "2026-03",
+      "sortEnd": "2026-04",
+      "category": "gis",
+      "tools": [
+        "Spatial Analyst",
+        "Kriging",
+        "IDW",
+        "Zonal Statistics",
+        "Raster Calculator"
+      ],
+      "summary": "A spatial decision-support workflow examining climate-related spatial patterns on the Potohar Plateau using interpolation and raster analysis.",
+      "overview": "This project developed a spatial decision-support workflow for examining climate-related spatial patterns using interpolation and raster analysis.",
+      "objective": "Examine climate-related spatial patterns on the Potohar Plateau with interpolation and raster analysis.",
+      "studyArea": "Potohar Plateau",
+      "data": [],
+      "dataHint": "Add the climate variables, years and datasets used.",
+      "methods": [
+        "Spatial interpolation using Kriging and IDW.",
+        "Raster analysis using Raster Calculator and Zonal Statistics in Spatial Analyst."
+      ],
+      "methodsHint": "Add the interpolation settings and how the zonal statistics were used.",
+      "outputs": [],
+      "outputsHint": "Add conclusions only as stated in the project report.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/sdss-potohar-climate",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "ndvi-ndbi-chakwal-jhelum",
+      "title": "NDVI and NDBI Spatial Modeling (Chakwal & Jhelum Districts)",
+      "dates": "Feb 2026 – Mar 2026",
+      "sortStart": "2026-02",
+      "sortEnd": "2026-03",
+      "category": "rs",
+      "tools": [
+        "Raster Calculator",
+        "Extract by Mask",
+        "Reclassify",
+        "Symbology"
+      ],
+      "summary": "NDVI and NDBI calculated from satellite bands to compare vegetation and built-up patterns across Chakwal and Jhelum districts.",
+      "overview": "This project calculated NDVI and NDBI from suitable satellite bands and compared vegetation and built-up patterns across Chakwal and Jhelum.",
+      "objective": "Compare vegetation and built-up patterns between Chakwal and Jhelum districts using NDVI and NDBI.",
+      "studyArea": "Chakwal and Jhelum districts",
+      "data": [],
+      "dataHint": "Add the sensor, scene dates and source of the imagery.",
+      "methods": [
+        "Calculated NDVI and NDBI from satellite bands.",
+        "Tools used include Raster Calculator, Extract by Mask, Reclassify and symbology."
+      ],
+      "methodsHint": "Add the formulas used and how the index values were classified.",
+      "outputs": [],
+      "outputsHint": "Add findings only as stated in the project.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/ndvi-ndbi-chakwal-jhelum",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "insar-lahore-subsidence",
+      "title": "Land Subsidence Detection via Sentinel-1 InSAR (Lahore)",
+      "dates": "Nov 2025 – Jan 2026",
+      "sortStart": "2025-11",
+      "sortEnd": "2026-01",
+      "category": "rs",
+      "tools": [
+        "Sentinel-1 SAR/InSAR workflow",
+        "Raster Calculator",
+        "Hillshade",
+        "Slope",
+        "Contours",
+        "Extract by Mask"
+      ],
+      "summary": "A subsidence-focused remote-sensing project for Lahore using Sentinel-1 data.",
+      "overview": "This project worked on land subsidence in Lahore using Sentinel-1 data.",
+      "objective": "Investigate land subsidence in Lahore using Sentinel-1 data.",
+      "studyArea": "Lahore",
+      "data": [],
+      "dataHint": "Add the Sentinel-1 acquisition dates, product type and source.",
+      "methods": [
+        "Sentinel-1 SAR/InSAR workflow, as supplied.",
+        "Supporting raster and terrain tools listed: Raster Calculator, Hillshade, Slope, Contours and Extract by Mask."
+      ],
+      "methodsHint": "Add which InSAR processing steps and software were actually performed.",
+      "outputs": [],
+      "outputsHint": "Add outputs only if they are documented. Do not imply validated results.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "The processing steps, software and accuracy of this project are not documented here. No millimetre-level accuracy, validation or risk claims are made.",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/insar-lahore-subsidence",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "webgis-health-portal",
+      "title": "WebGIS Health Facility Portal (Islamabad & Rawalpindi)",
+      "dates": "Dec 2025 – Jan 2026",
+      "sortStart": "2025-12",
+      "sortEnd": "2026-01",
+      "category": "web",
+      "tools": [
+        "Visual Studio Code",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Leaflet.js",
+        "GitHub"
+      ],
+      "summary": "An interactive web map concept for viewing health-facility locations in Islamabad and Rawalpindi, built with Leaflet.js.",
+      "overview": "This project built an interactive web map concept for viewing health-facility locations in Islamabad and Rawalpindi using Leaflet and web technologies.",
+      "objective": "Show health-facility locations in Islamabad and Rawalpindi on an interactive web map.",
+      "studyArea": "Islamabad and Rawalpindi",
+      "data": [],
+      "dataHint": "Add the source and date of the health-facility data.",
+      "methods": [
+        "Built with HTML5, CSS3 and JavaScript.",
+        "Used Leaflet.js for the interactive map and GitHub for the project files."
+      ],
+      "methodsHint": "Add the features that are implemented and tested, such as layers, popups or search.",
+      "outputs": [],
+      "outputsHint": "Add the live URL and repository only after checking that they work.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "Concept",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/webgis-health-portal",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "dip-dem-terrain-classification",
+      "title": "Digital Image Processing (DIP) & DEM Terrain Classification",
+      "dates": "Nov 2025 – Dec 2025",
+      "sortStart": "2025-11",
+      "sortEnd": "2025-12",
+      "category": "rs",
+      "tools": [
+        "Supervised classification",
+        "Unsupervised classification",
+        "Slope mapping",
+        "Hillshade"
+      ],
+      "summary": "Processing of multispectral imagery and DEM-derived terrain layers for land-cover and topographic interpretation.",
+      "overview": "This project processed multispectral imagery and DEM-derived terrain layers for land-cover and topographic interpretation.",
+      "objective": "Interpret land cover and topography using multispectral imagery and DEM-derived layers.",
+      "studyArea": "",
+      "data": [],
+      "dataHint": "Add the imagery and DEM sources, with dates and resolution.",
+      "methods": [
+        "Supervised and unsupervised classification of multispectral imagery.",
+        "DEM-derived terrain layers: slope mapping and hillshade."
+      ],
+      "methodsHint": "Add the classification method, classes and settings used.",
+      "outputs": [],
+      "outputsHint": "Add an accuracy assessment only if one is available.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/dip-dem-terrain-classification",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "network-emergency-healthcare",
+      "title": "Network Analysis for Emergency Healthcare Accessibility (Rawalpindi)",
+      "dates": "May 2025 – Jun 2025",
+      "sortStart": "2025-05",
+      "sortEnd": "2025-06",
+      "category": "carto",
+      "tools": [
+        "Network Analyst",
+        "Intersect",
+        "Spatial Join",
+        "Service buffers"
+      ],
+      "summary": "An analysis of road-network access to emergency healthcare locations in Rawalpindi.",
+      "overview": "This project analyzed road-network access to emergency healthcare locations in Rawalpindi.",
+      "objective": "Assess how accessible emergency healthcare locations in Rawalpindi are by road network.",
+      "studyArea": "Rawalpindi",
+      "data": [],
+      "dataHint": "Add the source and date of the road network and healthcare location data.",
+      "methods": [
+        "Network analysis using Network Analyst.",
+        "Supporting tools: Intersect, Spatial Join and service buffers."
+      ],
+      "methodsHint": "Add the network dataset, impedance setting and travel assumptions.",
+      "outputs": [],
+      "outputsHint": "Add the service-area or routing outputs that were actually produced.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/network-emergency-healthcare",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "cartographic-symbol-enhancement",
+      "title": "Cartographic Symbol Enhancement Analysis",
+      "dates": "Dec 2024 – Jan 2025",
+      "sortStart": "2024-12",
+      "sortEnd": "2025-01",
+      "category": "carto",
+      "tools": [
+        "ArcGIS symbology tools"
+      ],
+      "summary": "Applying cartographic design and symbol hierarchy to improve map legibility and visual prioritization of mapped features.",
+      "overview": "This project applied cartographic design and symbol hierarchy to improve map legibility and the visual prioritization of mapped features at relevant scales.",
+      "objective": "Improve map legibility and visual hierarchy through better symbol design.",
+      "studyArea": "",
+      "data": [],
+      "dataHint": "Add the map data used.",
+      "methods": [
+        "Applied symbol hierarchy and cartographic design principles.",
+        "Used ArcGIS symbology tools."
+      ],
+      "methodsHint": "Add the symbol changes made and the scales they were designed for.",
+      "outputs": [],
+      "outputsHint": "Add before-and-after maps if you have them.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/cartographic-symbol-enhancement",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "library-management-system",
+      "title": "Dynamic Library Management System",
+      "dates": "Jan 2025 – Jan 2025",
+      "sortStart": "2025-01",
+      "sortEnd": "2025-01",
+      "category": "web",
+      "tools": [
+        "Visual Studio Code",
+        "JavaScript"
+      ],
+      "summary": "A JavaScript-based library management interface with dynamic user-interface updates.",
+      "overview": "This project created a JavaScript-based library management interface with dynamic user-interface updates.",
+      "objective": "Build a library management interface that updates dynamically.",
+      "studyArea": "Not applicable",
+      "data": [],
+      "dataHint": "Not applicable unless the project uses a dataset. Add details if it does.",
+      "methods": [
+        "Built in JavaScript using Visual Studio Code.",
+        "Dynamic user-interface updates."
+      ],
+      "methodsHint": "List only the functions that are implemented and tested.",
+      "outputs": [],
+      "outputsHint": "Add screenshots or a demo link once they are verified.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/library-management-system",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "balochistan-20yr-environmental",
+      "title": "Balochistan 20-Year Environmental Spatiotemporal Analysis",
+      "dates": "Mar 2024 – May 2024",
+      "sortStart": "2024-03",
+      "sortEnd": "2024-05",
+      "category": "rs",
+      "tools": [
+        "Clip",
+        "Extract by Mask",
+        "Raster Calculator",
+        "Zonal Statistics",
+        "Cell Statistics",
+        "Reclassify",
+        "Supervised classification",
+        "Unsupervised classification",
+        "ArcGIS"
+      ],
+      "summary": "A comparison of environmental indicators across 2000–2020 in Balochistan, including NDVI, LST, LULC and precipitation where datasets were available.",
+      "overview": "This project compared environmental indicators across the 2000–2020 period, including NDVI, LST, LULC and precipitation where datasets were available.",
+      "objective": "Compare environmental change in Balochistan between 2000 and 2020.",
+      "studyArea": "Balochistan",
+      "data": [],
+      "dataHint": "Add the exact data source and year coverage for each indicator.",
+      "methods": [
+        "Compared NDVI, LST, LULC and precipitation across 2000–2020 where datasets were available.",
+        "ArcGIS tools used: Clip, Extract by Mask, Raster Calculator, Zonal and Cell Statistics, Reclassify, and supervised and unsupervised classification."
+      ],
+      "methodsHint": "Add the workflow for each indicator.",
+      "outputs": [],
+      "outputsHint": "Add findings only where they are supported by the project's data.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/balochistan-20yr-environmental",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "cpp-employee-management",
+      "title": "C++ Employee Management System",
+      "dates": "Apr 2024 – Apr 2024",
+      "sortStart": "2024-04",
+      "sortEnd": "2024-04",
+      "category": "web",
+      "tools": [
+        "Dev-C++",
+        "C++"
+      ],
+      "summary": "A terminal-based employee-management program built with core C++ concepts.",
+      "overview": "This project built a terminal-based employee-management program using core C++ concepts.",
+      "objective": "Build a terminal-based program for managing employee records.",
+      "studyArea": "Not applicable",
+      "data": [],
+      "dataHint": "Not applicable unless the project reads data from files. Add details if it does.",
+      "methods": [
+        "Written in C++ using Dev-C++.",
+        "Runs in the terminal."
+      ],
+      "methodsHint": "Mention inheritance, encapsulation, sorting or data handling only where those features exist in the code.",
+      "outputs": [],
+      "outputsHint": "Add screenshots of the program running if you have them.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/cpp-employee-management",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    },
+    {
+      "id": "metro-stations-mapping",
+      "title": "Digital Mapping and Topology of Metro Stations (Islamabad & Rawalpindi)",
+      "dates": "Dec 2023 – Jan 2024",
+      "sortStart": "2023-12",
+      "sortEnd": "2024-01",
+      "category": "carto",
+      "tools": [
+        "Editor toolbar",
+        "Create Features",
+        "Snapping",
+        "Merge",
+        "Dissolve",
+        "Buffer"
+      ],
+      "summary": "Creation and editing of metro-station mapping layers in Islamabad and Rawalpindi, with topology/editing and buffer operations.",
+      "overview": "This project created and edited metro-station mapping layers and applied relevant topology and editing operations and buffers.",
+      "objective": "Create and edit metro-station layers for Islamabad and Rawalpindi.",
+      "studyArea": "Islamabad and Rawalpindi",
+      "data": [],
+      "dataHint": "Add the data source for the station locations.",
+      "methods": [
+        "Created and edited features using the Editor toolbar, Create Features and snapping.",
+        "Applied Merge, Dissolve and Buffer operations."
+      ],
+      "methodsHint": "Add the topology rules or checks that were applied.",
+      "outputs": [],
+      "outputsHint": "Add the final map once it is available.",
+      "role": "",
+      "projectType": "Academic / course project (to be confirmed)",
+      "caution": "",
+      "status": "",
+      "linksHint": "",
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      },
+      "screenshot": "",
+      "screenshotAlt": "",
+      "image": "assets/img/projects/metro-stations-mapping",
+      "imageIsPlaceholder": true,
+      "imageAlt": "Abstract placeholder graphic for this project. It is not project output."
+    }
+  ]
+}

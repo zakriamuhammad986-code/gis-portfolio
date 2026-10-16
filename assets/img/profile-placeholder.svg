@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" role="img" aria-labelledby="t d">
+  <title id="t">Profile photo placeholder</title>
+  <desc id="d">A neutral silhouette icon on a dark blue background. This is a placeholder, not a photo of Muhammad Zakria Nawaz.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12203d"/>
+      <stop offset="1" stop-color="#0d1730"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="480" fill="url(#bg)"/>
+  <g fill="none" stroke="#4f8cff" stroke-opacity=".25" stroke-width="1">
+    <path d="M0 360c60-30 100-30 160 0s110 30 240-20"/>
+    <path d="M0 390c60-30 100-30 160 0s110 30 240-20"/>
+    <path d="M0 420c60-30 100-30 160 0s110 30 240-20"/>
+  </g>
+  <circle cx="200" cy="180" r="62" fill="#1d3157"/>
+  <path d="M80 400c0-76 54-120 120-120s120 44 120 120z" fill="#1d3157"/>
+  <text x="200" y="448" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" fill="#a9b8d0">Photo placeholder</text>
+</svg>

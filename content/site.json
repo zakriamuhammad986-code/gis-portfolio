@@ -1,0 +1,12 @@
+{
+  "email": "",
+  "phone": "",
+  "whatsapp": "",
+  "links": [],
+  "contactForm": {
+    "endpoint": "",
+    "fieldsList": [],
+    "timeoutMs": 15000
+  },
+  "showServicesPage": false
+}

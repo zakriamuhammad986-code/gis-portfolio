@@ -1,0 +1,90 @@
+{
+  "lead": "Small GIS tasks I can take on at my current skill level as a BS Geo-Informatics student.",
+  "scopeNote": "Project scope, data availability and validation requirements are discussed before any work begins.",
+  "cta": "Contact for scope and quote",
+  "services": [
+    {
+      "published": false,
+      "id": "thematic-mapping",
+      "title": "Thematic mapping and map layout design",
+      "summary": "Thematic maps and finished layouts from data you provide.",
+      "includes": [
+        "Choosing symbology and classes that suit the data",
+        "A layout with title, legend, scale bar and north arrow"
+      ],
+      "limits": "",
+      "relatedProjects": [
+        "cartographic-symbol-enhancement"
+      ]
+    },
+    {
+      "published": false,
+      "id": "data-cleaning-digitization",
+      "title": "Basic GIS data cleaning and digitization",
+      "summary": "Digitizing features and tidying basic spatial data.",
+      "includes": [
+        "Digitizing features from imagery or existing maps",
+        "Basic clean-up of geometry and attributes"
+      ],
+      "limits": "",
+      "relatedProjects": [
+        "metro-stations-mapping"
+      ]
+    },
+    {
+      "published": false,
+      "id": "spatial-analysis",
+      "title": "Spatial analysis and buffer/service-area mapping",
+      "summary": "Buffer, overlay and service-area style analysis with a map of the result.",
+      "includes": [
+        "Buffer and overlay analysis",
+        "Service-area mapping where a suitable road network is available"
+      ],
+      "limits": "Depends on suitable input data.",
+      "relatedProjects": [
+        "network-emergency-healthcare",
+        "groundwater-mcda"
+      ]
+    },
+    {
+      "published": false,
+      "id": "rs-indices",
+      "title": "Remote-sensing index calculation (NDVI/NDBI)",
+      "summary": "NDVI or NDBI maps from satellite imagery, where data and scope are suitable.",
+      "includes": [
+        "NDVI or NDBI calculation from suitable imagery",
+        "A map of the result for the agreed area"
+      ],
+      "limits": "Needs suitable imagery and a clear scope. Validation requirements are agreed first.",
+      "relatedProjects": [
+        "ndvi-ndbi-chakwal-jhelum",
+        "balochistan-20yr-environmental"
+      ]
+    },
+    {
+      "published": false,
+      "id": "leaflet-webgis",
+      "title": "Simple WebGIS map development with Leaflet",
+      "summary": "A simple interactive web map built with Leaflet.",
+      "includes": [
+        "A web map built with HTML, CSS, JavaScript and Leaflet.js"
+      ],
+      "limits": "Hosting and data sources are discussed at the start.",
+      "relatedProjects": [
+        "webgis-health-portal"
+      ]
+    },
+    {
+      "published": false,
+      "id": "documentation",
+      "title": "GIS workflow documentation and map/report formatting",
+      "summary": "Clear written documentation of a GIS workflow, with maps and tables formatted for a report.",
+      "includes": [
+        "Step-by-step documentation of a workflow",
+        "Formatting maps and tables for a report"
+      ],
+      "limits": "",
+      "relatedProjects": []
+    }
+  ]
+}
