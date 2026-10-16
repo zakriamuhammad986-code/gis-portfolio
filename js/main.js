@@ -43,6 +43,14 @@
     items.push({ label: "Email", href: "mailto:" + cfg.email.trim(), text: cfg.email.trim(), external: false });
   }
 
+  /* Phone: same validation rule as the Contact page. Shown as a tap-to-call link. */
+  if (typeof cfg.phone === "string") {
+    var ph = cfg.phone.trim();
+    if (/^\+?[\d][\d\s().-]{5,}$/.test(ph)) {
+      items.push({ label: "Phone", href: "tel:" + ph.replace(/[^\d+]/g, ""), text: ph, external: false });
+    }
+  }
+
   (Array.isArray(cfg.links) ? cfg.links : []).forEach(function (l) {
     if (!l || typeof l.label !== "string" || typeof l.url !== "string") return;
     try {
