@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Muhammad Zakria Nawaz</title>
+  <meta name="description" content="GIS, remote sensing, WebGIS and programming projects by Muhammad Zakria Nawaz, with search and filters.">
+  <meta name="theme-color" content="#0a0f1d">
+
+  <meta property="og:title" content="Projects | Muhammad Zakria Nawaz">
+  <meta property="og:description" content="GIS, remote sensing, WebGIS and programming projects by Muhammad Zakria Nawaz, with search and filters.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Muhammad Zakria Nawaz, home">
+        <img src="assets/img/favicon.svg" width="36" height="36" alt="">
+        <span>Muhammad Zakria Nawaz</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h1>Projects</h1>
+        <p class="lead">13 GIS, remote sensing, WebGIS and programming projects, listed with their dates and tools. Open any card for details.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Project list">
+      <div class="container">
+        <p class="notice draft-notice"><strong>Draft status.</strong> Summaries follow the project information supplied and are not independently verified. <span class="add-details">Add details</span> marks information still to be supplied. No results, accuracy figures, validation or links are claimed unless they are shown.</p>
+
+        <form class="project-controls" id="project-form" role="search" aria-label="Search and filter projects">
+          <div class="control-row">
+            <div class="field">
+              <label for="project-search">Search projects</label>
+              <input id="project-search" type="search" placeholder="Title, tool, place or keyword" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="field">
+              <label for="project-sort">Sort by</label>
+              <select id="project-sort">
+                <option value="newest">Newest first</option>
+                <option value="oldest">Oldest first</option>
+                <option value="title">Title A to Z</option>
+              </select>
+            </div>
+          </div>
+          <fieldset class="chips" id="category-filters">
+            <legend>Filter by category</legend>
+            <div class="chip-row">
+              <div class="chip"><input type="radio" name="category" id="cat-all" value="all" checked><label for="cat-all">All projects <span class="count" data-count="all"></span></label></div>
+              <div class="chip"><input type="radio" name="category" id="cat-gis" value="gis"><label for="cat-gis">GIS &amp; Spatial Analysis <span class="count" data-count="gis"></span></label></div><div class="chip"><input type="radio" name="category" id="cat-rs" value="rs"><label for="cat-rs">Remote Sensing &amp; Image Processing <span class="count" data-count="rs"></span></label></div><div class="chip"><input type="radio" name="category" id="cat-web" value="web"><label for="cat-web">WebGIS &amp; Programming <span class="count" data-count="web"></span></label></div><div class="chip"><input type="radio" name="category" id="cat-carto" value="carto"><label for="cat-carto">Cartography &amp; Network Analysis <span class="count" data-count="carto"></span></label></div>
+            </div>
+          </fieldset>
+          <div class="control-foot">
+            <p id="results-status" role="status" aria-live="polite"></p>
+            <button type="button" class="btn-link" data-clear-filters data-main-clear hidden>Clear filters</button>
+          </div>
+        </form>
+
+        <noscript><p class="notice">This page needs JavaScript to list and filter the projects.</p></noscript>
+        <ul class="project-grid" id="project-grid" aria-label="Projects"></ul>
+        <div class="empty-state" id="empty-state" hidden>
+          <h2>No projects match</h2>
+          <p>Try a different word or choose another category.</p>
+          <button type="button" class="btn btn-secondary" data-clear-filters>Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-inner">
+        <div class="dialog-head">
+          <div>
+            <p class="eyebrow" id="dialog-eyebrow"></p>
+            <h2 id="dialog-title"></h2>
+            <p class="dialog-dates" id="dialog-dates"></p>
+          </div>
+          <button type="button" class="dialog-close" id="dialog-close" aria-label="Close project details"><span aria-hidden="true">&times;</span> Close</button>
+        </div>
+        <div class="dialog-body" id="dialog-body" tabindex="0" role="region" aria-label="Project details"></div>
+        <div class="dialog-foot">
+          <button type="button" class="btn btn-secondary" id="dialog-prev">&larr; Previous</button>
+          <span id="dialog-pos"></span>
+          <button type="button" class="btn btn-secondary" id="dialog-next">Next &rarr;</button>
+        </div>
+        <p class="visually-hidden" id="dialog-status" role="status" aria-live="polite"></p>
+      </div>
+    </dialog>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Muhammad Zakria Nawaz</h2>
+          <p>Geo-Informatics student. GIS, Remote Sensing, Spatial Analysis and WebGIS.<br>
+          BS Geo-Informatics, PMAS-Arid Agriculture University Rawalpindi.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Explore</h2>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <div data-contact-links>
+            <p>Verified contact and social links will appear here once they are added.</p>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Muhammad Zakria Nawaz. Project descriptions on this site are academic and course work unless stated otherwise.</p>
+    </div>
+  </footer>
+
+  <script src="js/content-loader.js" data-content="site,projects" data-scripts="js/main.js,js/projects.js"></script>
+</body>
+</html>

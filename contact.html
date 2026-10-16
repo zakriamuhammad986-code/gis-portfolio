@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Muhammad Zakria Nawaz</title>
+  <meta name="description" content="Contact Muhammad Zakria Nawaz.">
+  <meta name="theme-color" content="#0a0f1d">
+
+  <meta property="og:title" content="Contact | Muhammad Zakria Nawaz">
+  <meta property="og:description" content="Contact Muhammad Zakria Nawaz.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Muhammad Zakria Nawaz, home">
+        <img src="assets/img/favicon.svg" width="36" height="36" alt="">
+        <span>Muhammad Zakria Nawaz</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="bars" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Contact</h1>
+        <p class="lead">Get in touch about my projects or my studies.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Send a message</h2>
+          <p id="contact-noscript" class="notice notice-warn" style="margin-top:0"><strong>This form needs JavaScript.</strong> It cannot send messages without it.</p>
+          <p id="form-mode" class="notice form-mode"></p>
+
+          <form id="contact-form" novalidate aria-describedby="form-mode">
+            <div id="form-summary" class="form-summary" tabindex="-1" role="alert" hidden></div>
+            <div id="form-error" class="form-error" tabindex="-1" role="alert" hidden></div>
+            <div id="form-status" class="form-status" tabindex="-1" role="status" aria-live="polite" hidden></div>
+
+            <fieldset id="contact-fields" class="form-fields" disabled>
+              <legend class="visually-hidden">Your message</legend>
+
+              <div class="field">
+                <label for="cf-name">Name <span class="req">(required)</span></label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" required>
+                <p class="field-error" id="cf-name-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="cf-email">Email <span class="req">(required)</span></label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="cf-email-hint">
+                <p class="field-hint" id="cf-email-hint">Used to reply to you.</p>
+                <p class="field-error" id="cf-email-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="cf-type">Subject / project type <span class="req">(required)</span></label>
+                <select id="cf-type" name="type" required>
+                  <option value="">Select one</option>
+                  <option value="General question">General question</option>
+                  <optgroup label="Project type">
+                    <option value="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</option>
+                    <option value="Remote Sensing &amp; Image Processing">Remote Sensing &amp; Image Processing</option>
+                    <option value="WebGIS &amp; Programming">WebGIS &amp; Programming</option>
+                    <option value="Cartography &amp; Network Analysis">Cartography &amp; Network Analysis</option>
+                  </optgroup>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="field-error" id="cf-type-err" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="cf-message">Message <span class="req">(required)</span></label>
+                <textarea id="cf-message" name="message" rows="7" required aria-describedby="cf-message-hint"></textarea>
+                <p class="field-hint" id="cf-message-hint">At least 10 characters. <span id="cf-count" class="count-note">0 / 3000</span></p>
+                <p class="field-error" id="cf-message-err" hidden></p>
+              </div>
+
+              <div class="hp" aria-hidden="true">
+                <label for="cf-confirm">Leave this field empty</label>
+                <input id="cf-confirm" name="confirm" type="text" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button id="cf-submit" class="btn btn-primary" type="submit" disabled>Form not connected yet</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <aside aria-labelledby="direct-title">
+          <h2 id="direct-title">Direct contact</h2>
+          <p class="contact-note">Only verified details are shown as links. A chip means the detail has not been added yet.</p>
+          <dl class="info-dl contact-dl">
+            <dt>Email</dt><dd data-contact-row="email"><span class="add-details">Add verified email</span></dd>
+            <dt>Phone</dt><dd data-contact-row="phone"><span class="add-details">Add verified phone</span></dd>
+            <dt>WhatsApp</dt><dd data-contact-row="whatsapp"><span class="add-details">Add verified link</span></dd>
+            <dt>LinkedIn</dt><dd data-contact-row="linkedin"><span class="add-details">Add verified URL</span></dd>
+            <dt>GitHub</dt><dd data-contact-row="github"><span class="add-details">Add verified URL</span></dd>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Muhammad Zakria Nawaz</h2>
+          <p>Geo-Informatics student. GIS, Remote Sensing, Spatial Analysis and WebGIS.<br>
+          BS Geo-Informatics, PMAS-Arid Agriculture University Rawalpindi.</p>
+        </div>
+        <nav aria-label="Footer">
+          <h2>Explore</h2>
+          <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h2>Contact</h2>
+          <div data-contact-links>
+            <p>Verified contact and social links will appear here once they are added.</p>
+          </div>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Muhammad Zakria Nawaz. Project descriptions on this site are academic and course work unless stated otherwise.</p>
+    </div>
+  </footer>
+
+  <script src="js/content-loader.js" data-content="site" data-scripts="js/main.js,js/contact.js"></script>
+</body>
+</html>
